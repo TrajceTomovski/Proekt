@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.george.proekt.Main2Activity"
+    android:background="@color/color1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="11dp"
+        android:text="ADD   USER   DETAILS :"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/next"
+        android:layout_alignRight="@+id/next"
+        android:layout_below="@+id/adduser"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last name"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User name"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/lastname"
+        android:layout_alignLeft="@+id/lastname"
+        android:layout_alignStart="@+id/lastname" />
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:drawableRight="@drawable/right_arrow"
+        android:text="NEXT" />
+
+    <TextView
+        android:id="@+id/gendertekst"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="11dp"
+        android:text="GENDER"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:textColor="@color/white"/>
+
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/gendertekst"
+        >
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="M"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+
+
+
+
+</RelativeLayout>

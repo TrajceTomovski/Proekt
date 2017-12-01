@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.george.proekt.Main4Activity"
+    android:background="@color/color2">
+
+
+    <Button
+        android:id="@+id/checkinternetconection"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="CHECK INTERNET CONECTION"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="241dp"
+        android:background="@color/color3"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:text="Now you are conected to the internet"
+        android:id="@+id/conectedornot"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/checkinternetconection"
+        android:layout_alignLeft="@+id/checkinternetconection"
+        android:layout_alignStart="@+id/checkinternetconection"
+        android:layout_alignRight="@+id/checkinternetconection"
+        android:layout_alignEnd="@+id/checkinternetconection"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="BACK"
+        android:gravity="center_horizontal"
+        android:layout_alignRight="@+id/conectedornot"
+        android:layout_alignEnd="@+id/conectedornot"
+        android:layout_alignLeft="@+id/conectedornot"
+        android:layout_alignStart="@+id/conectedornot"
+        android:drawableLeft="@drawable/left_arrow"/>
+</RelativeLayout>

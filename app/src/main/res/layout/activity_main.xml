@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.george.proekt.MainActivity"
+    android:background="@color/color2">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/study_notes_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="LOG IN"
+        android:background="@color/color3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_alignStart="@+id/logo"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignEnd="@+id/logo" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="continue as Guest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/logIn"
+        android:layout_alignStart="@+id/logIn"
+        android:layout_alignRight="@+id/logIn"
+        android:layout_alignEnd="@+id/logIn" />
+
+</RelativeLayout>

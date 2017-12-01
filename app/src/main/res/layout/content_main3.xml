@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.george.proekt.Main3Activity">
+
+    <TextView
+        android:id="@+id/textguest"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/color2"
+
+        />
+
+    <EditText
+        android:id="@+id/editguest"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Guest"
+        android:background="@drawable/rounded_edittext"/>
+
+    <Button
+        android:id="@+id/edituser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editguest"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="EDIT USER"
+        android:background="@color/color3"/>
+
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edituser"
+        android:layout_alignStart="@+id/edituser"
+        android:layout_below="@+id/edituser"
+        android:layout_marginTop="22dp"
+        android:text="ADD USER"
+        android:background="@color/color3"/>
+
+    <ImageView
+        android:id="@+id/imageman"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/imagewomen"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/changegender"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Change gender"
+        android:layout_below="@+id/textguest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/checkinternet"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="CHECK INTERNET CONECTION"
+        android:background="@color/color3"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editguest"
+        android:layout_alignStart="@+id/editguest"
+        android:layout_alignRight="@+id/adduser"
+        android:layout_alignEnd="@+id/adduser" />
+
+    <ImageView
+        android:id="@+id/imagewomen"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/mujer"
+        android:layout_above="@+id/textinternetisnotchecked"
+        android:layout_alignLeft="@+id/imageman"
+        android:layout_alignStart="@+id/imageman"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:id="@+id/textinternetisnotchecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkinternet"
+        android:layout_alignLeft="@+id/checkinternet"
+        android:layout_alignStart="@+id/checkinternet"
+        android:text="Internet not checked yet"
+        android:layout_alignRight="@+id/checkinternet"
+        android:layout_alignEnd="@+id/checkinternet" />
+
+    <RadioGroup
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/changegender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioGroup"
+            android:layout_toLeftOf="@+id/imageman"
+            android:layout_toStartOf="@+id/imageman"
+            android:layout_weight="1"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F" />
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imagemale"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/man"
+        android:layout_alignTop="@+id/imageman"
+        android:layout_alignLeft="@+id/imageman"
+        android:layout_alignStart="@+id/imageman" />
+
+
+</RelativeLayout>
