@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.guest)
     TextView guest;
+    @BindView()
 
 
 
